@@ -1,0 +1,19 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": " creating a resturant page using webpack. The odin project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ara404E/Restaurant-Page.git"
+  },
+  "author": "Ara404E",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ara404E/Restaurant-Page/issues"
+  },
+  "homepage": "https://github.com/Ara404E/Restaurant-Page#readme"
+}
