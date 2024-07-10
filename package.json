@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Ara404E/Restaurant-Page/issues"
   },
-  "homepage": "https://github.com/Ara404E/Restaurant-Page#readme"
+  "homepage": "https://github.com/Ara404E/Restaurant-Page#readme",
+  "devDependencies": {
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  }
 }
