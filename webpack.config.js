@@ -1,20 +1,9 @@
-
-// const path = require('path');
-
-// module.exports = {
-//   entry: './src/index.js',
-//   output: {
-//     filename: 'main.js',
-//     path: path.resolve(__dirname, 'dist'),
-//   },
-// };
-
 const path = require('path');
 
 module.exports = {
   entry: './src/index.js',
   output: {
-    filename: 'main.js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   mode: 'development',
@@ -23,6 +12,26 @@ module.exports = {
       directory: path.join(__dirname, 'dist'),
     },
     compress: true,
-    port: 3000,
+    port: 3030,
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images/',
+            },
+          },
+        ],
+      },
+    ],
   },
 };

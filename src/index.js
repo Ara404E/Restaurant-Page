@@ -1,13 +1,11 @@
-import _ from 'lodash'
+import _ from 'lodash';
+import './style.css';
+import myImage from './download.jpeg';
 
-function component() {
-  const element = document.createElement('div');
-// Lodash, now imported by this script
-  element.innerHTML = _.join(['poop', 'webpack'], ' ');
+const myIcon = new Image();
+const div = document.querySelector('#content');
+myIcon.src = myImage;
 
-  return element;
-}
+div.appendChild(myIcon)
+    
 
-document.body.appendChild(component());
-
-console.log('YES ITS FINALLY  WORKING YAYYYY YAPPEE')
