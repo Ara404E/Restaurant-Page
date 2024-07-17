@@ -33,7 +33,9 @@ p{
     color:#2A2F4F ;
 }
 h1:hover{
-    color: #1FAB89;
+color: rgb(194,65,137);
+color: linear-gradient(86deg, rgba(194,65,137,1) 35%, rgba(241,6,227,1) 99%);;
+
 }
 i:hover{
     color: #355C7D;
@@ -68,13 +70,38 @@ i:hover{
 } 
 
 hr{
+
     width: 5%;
+    border: none;
     border-top: dotted 10px;
     color: #FFABE1;
 }
 
 #content > p{
     font-size: 3rem;
+}
+
+#paragraph-div{
+    margin-top: 10%;
+    border: dotted #EE6983 5px;
+}
+
+.about-paragraph{
+    margin: 30px;
+    font-size: 1.25rem;
+    color: #222831;
+}
+.brand-name{
+    font-weight: 700;
+    color:#F2789F;
+}
+.joke{
+    color: rgb(194,65,137);
+    color: linear-gradient(86deg, rgba(194,65,137,1) 35%, rgba(241,6,227,1) 99%);;
+;
+}
+.dead{
+        color: #DA0037;
 }
 .plug-paragraph{
     margin: 10px;

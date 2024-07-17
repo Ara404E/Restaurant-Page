@@ -29,4 +29,4 @@ homeBtn.addEventListener('click', ()=>{
     homeModule.displayHome();
 });
 
-homeModule.displayHome();
+aboutModule.displayAbout();
