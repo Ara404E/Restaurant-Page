@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "start": "webpack serve --open",
-    "stop": "kill-port 3000"
+    "watch": "webpack --watch",
+    "stop": "kill-port 3030"
   },
   "repository": {
     "type": "git",
