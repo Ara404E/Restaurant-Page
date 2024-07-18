@@ -6,6 +6,8 @@ html{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #FFE2E2;
 }
+    /* navigation styling */
+
 
 nav{
     display: flex;
@@ -33,9 +35,9 @@ p{
     color:#2A2F4F ;
 }
 h1:hover{
-color: rgb(194,65,137);
-color: linear-gradient(86deg, rgba(194,65,137,1) 35%, rgba(241,6,227,1) 99%);;
-
+    color: rgb(194,65,137);
+    color: linear-gradient(86deg, rgba(194,65,137,1) 35%, rgba(241,6,227,1) 99%);;
+    
 }
 i:hover{
     color: #355C7D;
@@ -46,36 +48,43 @@ i:hover{
     color: #222831;
 }
 
+
+/* home styling */
+
 #content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin: 3% 10%;
 }
-.shawarma-img{
-    rotate: 270deg;
-    margin: 5px;
-    height: 600px;
+.image-container {
+    margin-top: 1px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
-@media (max-width:700px){
-    #content{
-        flex-direction: column;
-        align-items: center;
-    }
-     .shawarma-img{
-         height: auto;
-         width: 300px;
-     }
-} 
 
-hr{
-
-    width: 5%;
-    border: none;
-    border-top: dotted 10px;
-    color: #FFABE1;
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
 }
+
+.centered-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #F2789F;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add background color for better readability */
+    padding: 10px; /* Optional: Add padding around the text */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+    text-align: center; /* Center the text */
+}
+
+
 
 #content > p{
     font-size: 3rem;
@@ -84,6 +93,17 @@ hr{
 #paragraph-div{
     margin-top: 10%;
     border: dotted #EE6983 5px;
+}
+
+
+/* about section styling */
+
+#about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3% 10%;
 }
 
 .about-paragraph{
@@ -98,11 +118,21 @@ hr{
 .joke{
     color: rgb(194,65,137);
     color: linear-gradient(86deg, rgba(194,65,137,1) 35%, rgba(241,6,227,1) 99%);;
-;
+    ;
 }
 .dead{
-        color: #DA0037;
+    color: #DA0037;
 }
+
+hr{
+    width: 5%;
+    border: none;
+    border-top: dotted 10px;
+   margin-top: 20px;
+    color: #FFABE1;
+}
+
+
 .plug-paragraph{
     margin: 10px;
     text-align: center;

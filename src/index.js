@@ -15,18 +15,24 @@ const homeBtn=document.querySelector("#home-btn");
 
 
 menuBtn.addEventListener('click', ()=>{
+    div.removeAttribute('id','content')
+    div.setAttribute('id' ,'menu-content')
     div.textContent='';
-    // menuModule.displayMenu();
+    menuModule.displayMenu();
 });
 
 aboutBtn.addEventListener("click", ()=>{
+    div.removeAttribute('id','content')
+    div.setAttribute('id' ,'about-content')
     div.textContent="";
     aboutModule.displayAbout();
 });
 
 homeBtn.addEventListener('click', ()=>{
+    div.removeAttribute('id','menu-content')
+   div.setAttribute('id' ,'content')
     div.textContent='';
     homeModule.displayHome();
 });
 
-aboutModule.displayAbout();
+homeModule.displayHome();

@@ -1,18 +1,19 @@
-import {div} from './index';
-import shawarmaImg from "./asset/shawarma.jpg"
+import { div } from './index';
+import crew from "./asset/pinkCrew.jpg";
 
+export function displayHome() {
+    const imageContainer = document.createElement('div');
+    imageContainer.classList.add('image-container');
 
-export function displayHome(){
-    const p=document.createElement('p')
-    p.innerHTML=`Ara's Shawarma with <br> 
-    our own special toum <b><i> sauce </b>`
+    const p = document.createElement('p');
+    p.classList.add('centered-text');
+    p.innerHTML = `Flama Shawarma`;
 
-   const shawarma=new Image();
-    shawarma.src=shawarmaImg;
-    shawarma.alt='A shawarma Image';
-    shawarma.classList.add('shawarma-img');
-
-    div.append(p);
-    div.append(shawarma);
+    const pinkCrew = new Image();
+    pinkCrew.src = crew;
+    pinkCrew.alt = 'A shawarma Image';
+    pinkCrew.classList.add('crew-img');
+    imageContainer.appendChild(pinkCrew);
+    imageContainer.appendChild(p);
+    div.append(imageContainer);
 }
-
