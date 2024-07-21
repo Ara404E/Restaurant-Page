@@ -32,7 +32,7 @@ const Menu = {
         name: "Pride Shawarma",
         price: "$2.99",
         foodDec: `Pride Shawarma made to 
-        disapoint your parents`,
+        disappoint your parents`,
         img: PrideShawarma
     },
     myRicePlate: {
@@ -45,29 +45,29 @@ const Menu = {
 };
 
 export function displayMenu() {
-    const menuDiv = document.createElement('div');
-    menuDiv.setAttribute('id', 'menu-div');
+    const menuDiv=document.createElement('div');
+    menuDiv.setAttribute('id','menu-div');
     div.append(menuDiv);
 
-    Object.values(Menu).forEach((item, index) => {
-        const itemDiv = document.createElement('div');
-        itemDiv.classList.add('menu-item');
-        if (index % 2 !== 0) {
-            itemDiv.classList.add('reverse');
-        }
+    
+        Object.values(Menu).forEach((item,index ) => {
+            const itemDiv=document.createElement('div');
+            itemDiv.classList.add('menu-item');
+            
+            if(index % 2!=0){
+                itemDiv.classList.add('reverse');
+            }
+        const foodImg= new Image();
+        foodImg.src=item.img;
+        foodImg.alt=`an image of ${item.img}`;
+        foodImg.classList.add('food-card');
+        
+        const foodDetail=document.createElement('p');
+        foodDetail.classList.add('food-detail');
+            foodDetail.innerHTML=`${item.foodDec} <br> ${item.price}`;
 
-        const foodImg = new Image();
-        foodImg.src = item.img;
-        foodImg.alt = `Image of ${item.name}`;
-        foodImg.classList.add("food-card");
-
-        const foodDetails = document.createElement('p');
-        foodDetails.classList.add('food-detail');
-        foodDetails.innerHTML = `${item.foodDec} <br> ${item.price}`;
-
-        itemDiv.appendChild(foodImg);
-        itemDiv.appendChild(foodDetails);
-
-        menuDiv.appendChild(itemDiv);
+            itemDiv.append(foodImg)
+            itemDiv.append(foodDetail)
+            menuDiv.append(itemDiv);
     });
 }
